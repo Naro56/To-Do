@@ -2,13 +2,15 @@ import { useState } from "react";
 
 export default function Component() {
   const [tasks, setTasks] = useState([
-    { text: "Wake up", done: false },
-    { text: "React", done: false },
-    { text: "DSA", done: false },
-    { text: "Play", done: false },
-    { text: "Sleep", done: false },
-    { text: "Repeat", done: false },
+    { text: "Buy groceries", done: false },
+    { text: "Call a friend", done: false },
+    { text: "Read a book", done: true },
+    { text: "Pay bills", done: true },
+    { text: "Clean the room", done: false },
+    { text: "8K Steps ", done: false },
   ]);
+
+
   const [newTask, setNewTask] = useState("");
 
   function addTask() {
@@ -27,19 +29,19 @@ export default function Component() {
 
  function handleTaskDone(index) {
    setTasks((prev) => {
-     // toggle done immutably
+   
      const updated = prev.map((t, i) =>
        i === index ? { ...t, done: !t.done } : t
      );
 
-     // keep not-done first, done last (stable within groups)
+     
      return updated.slice().sort((a, b) => Number(a.done) - Number(b.done));
    });
  }
 
   return (
     <div className="main-container">
-      <h2>What's on your mind to do</h2>
+      <h2>To-Do List</h2>
       <div>
         <input
           type="text"

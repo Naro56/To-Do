@@ -6,6 +6,7 @@ A simple To-Do List application built with React. You can add tasks, delete them
 ❌ Delete existing tasks  
 ✅ Mark tasks as Done / Undo  
 📌 Completed tasks are shown with an overline and moved to the bottom  
+![alt text](image.png)
 
 ## Tech Stack
 Frontend: React (useState hooks)  
