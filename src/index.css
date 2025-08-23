@@ -1,10 +1,84 @@
 
-.main-cantainer{
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-  align-items: center;
-  height: 100vh;
-  /* background-color: blue; */
+.main-container{
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 100px;
 }
 
+h1{
+  font-size: 3.5rem;
+}
+
+button{
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  border:none;
+  cursor:pointer;
+  transition: background-color 0.5s ease;
+
+}
+
+.add-button{
+  background-color: rgb(122, 248, 143);
+
+}
+
+.add-button:hover{
+  background-color: rgb(3, 250, 45);
+}
+
+.delete-button {
+  background-color: rgb(242, 73, 73);
+}
+
+.delete-button:hover {
+  background-color: rgb(242, 24, 13);
+}
+
+.done-button {
+  background-color: rgb(73, 180, 242);
+}
+
+.done-button:hover {
+  background-color: rgb(2, 155, 243);
+}
+
+input[type="text"]{
+  font-size: 1.5em;
+  padding: 15px;
+  border: 2px solid hsla(0, 3%, 94%, 0.867);
+  border-radius: 15px;
+  /* color: ; */
+}
+
+ol{
+  padding:0%;
+
+}
+li{
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 15px;
+  background-color: rgba(226, 223, 223, 0.814);
+  margin-bottom: 15px;
+  border: 2px solid rgba(236, 196, 196, 0.611);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+
+
+}
+
+.text{
+  flex: 1;
+}
+
+.delete-button , .done-button {
+  padding: 15px;
+  margin-left: 10px;
+  font-size: 1.4em;
+  border-radius: 15px;
+}

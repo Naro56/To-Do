@@ -1,14 +1,11 @@
-
-import Companent from './Companent';
-
-// import './App.css'
+import Component from "./Component";
 
 function App() {
  
 
   return (
     <>
-      <Companent />
+    <Component />  
     </>
   );
 }

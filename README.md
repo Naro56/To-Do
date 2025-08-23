@@ -1,12 +1,33 @@
-# React + Vite
+# ✅ React To-Do List App
+A simple To-Do List application built with React. You can add tasks, delete them, and mark tasks as done. When a task is marked as Done, it will get an overline (visual indicator of completion), move to the bottom of the list, and can be reverted back with Undo.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Features
+➕ Add new tasks  
+❌ Delete existing tasks  
+✅ Mark tasks as Done / Undo  
+📌 Completed tasks are shown with an overline and moved to the bottom  
 
-Currently, two official plugins are available:
+## Tech Stack
+Frontend: React (useState hooks)  
+Language: JavaScript (ES6+)  
+Styling: Inline styles + basic CSS classes  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## How to Run Locally
+1. Clone this repository: `git clone https://github.com/Naro56/To-Do.git`  
+2. Navigate to the project folder: `cd To-Do`  
+3. Install dependencies: `npm install`  
+4. Start the development server: `npm start`  
+5. Open in browser: `http://localhost:3000`  
 
-## Expanding the ESLint configuration
+## Future Improvements
+- Add task priorities (High / Medium / Low)  
+- Integrate with Google Calendar for scheduling tasks  
+- Add a timer (Pomodoro-style) for tasks  
+- Save completed tasks to a cloud database (MongoDB / Firebase)  
+- Add user authentication (Google OAuth)  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Contributing
+Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.  
+
+## License
+This project is licensed under the MIT License.
